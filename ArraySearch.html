@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Search</title>
+    <script>
+      let data = [15, 50, 20, 56, 23, 76, 84, 45];
+      const item = 23;
+      let index = undefined;
+
+      for (let i = 0; i < data.length; i++) {
+        if (data[i] === item) {
+          index = i;
+          break;
+        }
+      }
+      console.log(index);
+    </script>
+  </head>
+  <body></body>
+</html>

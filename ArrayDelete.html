@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Delete</title>
+    <script>
+      // delete 4th postion form array
+      let data = [20, 30, 45, 65, 70, 80, 57];
+      //   const position = 3;
+      //   for (let i = position; i < data.length - 1; i++) {
+      //     data[i] = data[i + 1];
+      //   }
+      //   data.length = data.length - 1;
+      //   console.log(data);
+
+      function handleClick() {
+        let data = [20, 30, 45, 65, 70, 80, 57];
+        const position = +document.getElementById("position").value - 1;
+        if (position < data.length) {
+          for (let i = position; i < data.length - 1; i++) {
+            data[i] = data[i + 1];
+          }
+          data.length = data.length - 1;
+          console.log(data);
+        } else {
+          alert("positoin is larger than array lenght");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="enter Position" id="position" />
+    <button onclick="handleClick()">Click Here</button>
+  </body>
+</html>
